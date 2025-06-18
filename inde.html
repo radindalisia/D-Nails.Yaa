@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>D'Nails.Yaa</title>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet" />
+  <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet" />
+  <link href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" rel="stylesheet" />
+  <style>
+    img:hover {
+      transform: scale(1.05);
+      transition: transform 0.3s ease;
+    }
+    .card-hover:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 10px 15px rgba(0, 0, 0, 0.1);
+      transition: all 0.3s ease;
+    }
+    button:hover {
+      transform: scale(1.03);
+      transition: transform 0.2s ease;
+    }
+  </style>
+</head>
+<body class="bg-pink-50 text-gray-800">
+
+  <!-- Hero Slider -->
+  <!-- Hero Video (Tanpa Slider) -->
+<section class="relative h-screen w-full overflow-hidden">
+  <!-- Video latar -->
+  <video class="absolute inset-0 w-full h-full object-cover" autoplay muted loop playsinline>
+    <source src="vidio1.mp4" type="video/mp4" />
+    Browser tidak mendukung video ini.
+  </video>
+
+  <!-- Overlay gelap -->
+  <div class="absolute inset-0 bg-black bg-opacity-50"></div>
+
+  <!-- Konten di atas video -->
+  <div class="relative z-10 h-full flex items-center justify-center text-center text-white px-4">
+    <div data-aos="fade-down">
+      <h1 class="text-4xl md:text-6xl font-bold mb-4">D'Nails.Yaa</h1>
+      <p class="text-lg">Kecantikan Kuku Dimulai dari Sini 💅</p>
+    </div>
+  </div>
+</section>
+
+
+  <!-- Gallery -->
+  <section class="py-16 px-4 max-w-5xl mx-auto" data-aos="fade-up">
+    <h2 class="text-3xl font-semibold mb-8 text-center">Galeri D'Nails.Yaa</h2>
+    <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
+      <img src="img1.jpg" class="rounded-xl shadow hover:shadow-lg transition" alt="Nail Art 1" />
+      <img src="img2.jpg" class="rounded-xl shadow hover:shadow-lg transition" alt="Nail Art 2" />
+      <img src="img3.jpg" class="rounded-xl shadow hover:shadow-lg transition" alt="Nail Art 3" />
+    </div>
+  </section>
+
+  <!-- Services -->
+  <section class="bg-white py-16 px-4" data-aos="fade-up">
+    <h2 class="text-3xl font-semibold mb-8 text-center">Layanan & Harga</h2>
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-6 max-w-4xl mx-auto">
+      <div class="p-6 bg-pink-50 rounded-xl shadow card-hover">
+        <h3 class="text-xl font-medium">Basic Nail Art</h3>
+        <p class="text-pink-600 font-semibold">Rp50.000</p>
+      </div>
+      <div class="p-6 bg-pink-50 rounded-xl shadow card-hover">
+        <h3 class="text-xl font-medium">Premium Nail Art</h3>
+        <p class="text-pink-600 font-semibold">Rp60.000</p>
+      </div>
+      <div class="p-6 bg-pink-50 rounded-xl shadow card-hover">
+        <h3 class="text-xl font-medium">Manicure + Nail Art</h3>
+        <p class="text-pink-600 font-semibold">Rp70.000</p>
+      </div>
+      <div class="p-6 bg-pink-50 rounded-xl shadow card-hover">
+        <h3 class="text-xl font-medium">Gel Polish</h3>
+        <p class="text-pink-600 font-semibold">Rp80.000</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Testimonials -->
+  <section class="py-16 px-4 bg-pink-50" data-aos="fade-up">
+    <h2 class="text-3xl font-semibold mb-8 text-center">Testimoni</h2>
+    <div class="max-w-3xl mx-auto space-y-6">
+      <div class="p-6 bg-white rounded-xl shadow card-hover">
+        <p class="italic">“Super puas! Kuku cantik banget.”</p>
+      </div>
+      <div class="p-6 bg-white rounded-xl shadow card-hover">
+        <p class="italic">“Desainnya unik dan rapi murah puas banget.”</p>
+      </div>
+      <div class="p-6 bg-white rounded-xl shadow card-hover">
+        <p class="italic">“Pelayanannya ramah banget!”</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Booking Form -->
+  <section class="py-16 px-4 bg-white" data-aos="fade-up">
+    <h2 class="text-3xl font-semibold mb-8 text-center">Booking Sekarang</h2>
+    <form id="waForm" class="max-w-xl mx-auto space-y-4">
+      <input type="text" id="nama" placeholder="Nama Lengkap" class="w-full p-3 border rounded" required />
+      <input type="text" id="tanggal" placeholder="Tanggal Booking (cth: 21 Juni 2025)" class="w-full p-3 border rounded" required />
+      <select id="layanan" class="w-full p-3 border rounded">
+        <option>Basic Nail Art</option>
+        <option>Premium Nail Art</option>
+        <option>Manicure + Nail Art</option>
+        <option>Gel Polish</option>
+      </select>
+      <button type="submit" class="bg-pink-500 hover:bg-pink-600 text-white px-4 py-2 rounded w-full">
+        Kirim via WhatsApp
+      </button>
+    </form>
+  </section>
+
+  <footer class="text-center py-6 bg-pink-100 text-sm">
+    © 2025 D'Nails.Yaa. All rights reserved.
+  </footer>
+
+  <!-- Scripts -->
+  <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+  <script>
+    AOS.init();
+
+    const swiper = new Swiper(".mySwiper", {
+      loop: true,
+      autoplay: {
+        delay: 4000,
+        disableOnInteraction: false,
+      },
+      pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+      },
+      navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+      },
+    });
+
+    document.getElementById('waForm').addEventListener('submit', function(e) {
+      e.preventDefault();
+      const nama = document.getElementById('nama').value;
+      const tanggal = document.getElementById('tanggal').value;
+      const layanan = document.getElementById('layanan').value;
+      const pesan = `Halo! Saya ingin booking:\n\nNama: ${nama}\nTanggal: ${tanggal}\nLayanan: ${layanan}`;
+      const nomorWa = '627848293742'; // Ganti dengan nomor WhatsApp kamu
+      const url = `https://wa.me/${nomorWa}?text=${encodeURIComponent(pesan)}`;
+      window.open(url, '_blank');
+    });
+  </script>
+
+</body>
+</html>
